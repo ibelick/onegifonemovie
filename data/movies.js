@@ -72,12 +72,57 @@ var data = [
 	{
 		gif: "img/elephant.gif",
 		name: "Elephant",
-		imdb:"http://www.imdb.com/title/tt1242599/?ref_=fn_al_tt_1"
+		imdb:"http://www.imdb.com/title/tt0363589/?ref_=nv_sr_2"
 	},
 	{
 		gif: "img/bellflower.gif",
 		name: "Bellflower",
 		imdb:"http://www.imdb.com/title/tt1242599/?ref_=fn_al_tt_1"
+	},
+	{
+		gif: "img/vickycristinabarcelona.gif",
+		name: "Vicky Cristina Barcelona",
+		imdb:"http://www.imdb.com/title/tt0497465/"
+	},
+	{
+		gif: "img/breakfastclub.gif",
+		name: "Breakfast Club",
+		imdb:"http://www.imdb.com/title/tt0088847/?ref_=fn_al_tt_1"
+	},
+	{
+		gif: "img/butterflyeffect.gif",
+		name: "The Butterfly Effect",
+		imdb:"http://www.imdb.com/title/tt0289879/?ref_=nv_sr_1"
+	},
+	{
+		gif: "img/99francs.gif",
+		name: "99 francs",
+		imdb:"http://www.imdb.com/title/tt0875113/?ref_=fn_al_tt_1"
+	},
+	{
+		gif: "img/dobberman.gif",
+		name: "Dobberman",
+		imdb:"http://www.imdb.com/title/tt0118996/?ref_=fn_al_tt_1"
+	},
+	{
+		gif: "img/snatch.gif",
+		name: "Snatch",
+		imdb:"http://www.imdb.com/title/tt0208092/?ref_=fn_al_tt_1"
+	},
+	{
+		gif: "img/gummo.gif",
+		name: "Gummo",
+		imdb:"http://www.imdb.com/title/tt0119237/?ref_=fn_al_tt_1"
+	},
+	{
+		gif: "img/kids.gif",
+		name: "Kids",
+		imdb:"http://www.imdb.com/title/tt0113540/?ref_=fn_al_tt_1"
+	},
+	{
+		gif: "img/thedoomgeneration.gif",
+		name: "The Doom Generation",
+		imdb:"http://www.imdb.com/title/tt0112887/?ref_=fn_al_tt_1"
 	}
 ];
 
@@ -87,7 +132,7 @@ function randomMovie() {
   var gifMovie = data[nbMovie].gif;
   var nameMovie = data[nbMovie].name;
   var imdbMovie = data[nbMovie].imdb;
-  $(".wrapper-movie").append("<a href="+imdbMovie+" target='_blank'><img class='movie-img' src="+gifMovie+" alt='theplacebeyondthepines' /></a>");
+  $(".wrapper-movie").append("<a href="+imdbMovie+" target='_blank'><img class='movie-img' src="+gifMovie+" alt="+nameMovie+" /></a>");
   $(".wrapper-movie").append("<figcaption><a href="+imdbMovie+" target='_blank'>"+nameMovie+"</a></figcaption>");
 }
 
